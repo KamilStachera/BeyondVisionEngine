@@ -27,22 +27,6 @@ namespace BeyondVisionEngine
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-            var imiona = new List<string> { "Asia", "Kasia", "Basia", "Zenek" };
-
-            for (var i = imiona.Count - 1; i >= 0; i--)
-            {
-                if (!imiona[i].EndsWith("a"))
-                    imiona.RemoveAt(i);
-            }
-
-            imiona = imiona.Where(imie => imie.EndsWith("a")).ToList();
-
-
-            imiona = (from imie in imiona
-                      where imie.EndsWith("a")
-                      select imie).ToList();
-
             var editWindow = new EditGameWindow();
             editWindow.ShowDialog();
         }

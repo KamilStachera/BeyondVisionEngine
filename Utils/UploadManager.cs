@@ -15,9 +15,9 @@ namespace BeyondVisionEngine.Utils
 {
     public class UploadManager
     {
-        private const string _accessKeyID = "AKIA6C7W7IHAGW4EIZNP";
-        private const string _secretKey = "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";
-        private const string _bucketName = "beyond-vision-gamedata";
+        private const string _accessKeyID = "xxx";
+        private const string _secretKey = "xxx";
+        private const string _bucketName = "xxx";
         private IAmazonS3 _s3Client;
         private AmazonPollyClient _pollyClient;
         private List<TaskAwaiter<StartSpeechSynthesisTaskResponse>> _responseAwaiters = new List<TaskAwaiter<StartSpeechSynthesisTaskResponse>>();
