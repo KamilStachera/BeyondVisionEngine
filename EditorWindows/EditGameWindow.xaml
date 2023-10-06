@@ -1,0 +1,15 @@
+﻿<editorWindows:PlanningWindowBase x:Class="BeyondVisionEngine.EditGameWindow"
+                                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                                  xmlns:local="clr-namespace:BeyondVisionEngine"
+                                  xmlns:editorWindows="clr-namespace:BeyondVisionEngine.EditorWindows"
+                                  mc:Ignorable="d"
+                                  Title="EditWindow" Height="450" Width="800">
+    <Grid Name="MainGrid">
+        <Button Name="AddLocationButton" Content="Add major location" HorizontalAlignment="Left" Margin="670,37,0,0" VerticalAlignment="Top" Width="112" Height="28" Click="AddLocationButton_Click"/>
+        <Button Content="Save and upload" HorizontalAlignment="Left" Margin="670,91,0,0" VerticalAlignment="Top" Width="112" Height="28"/>
+        <Button Name="GenerateJsonButton" Content="Save and upload &#xD;&#xA;board to server" HorizontalAlignment="Left" Margin="670,146,0,0" VerticalAlignment="Top" Width="112" Height="42" Click="SaveAndUpload_Click"/>
+    </Grid>
+</editorWindows:PlanningWindowBase>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="BeyondVisionEngine.EditorWindows.EditDialogEvent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BeyondVisionEngine.EditorWindows"
+        mc:Ignorable="d"
+        Title="EditDialogGameEvent" Height="540.937" Width="480.624"
+        Closing="EditDialogEvent_OnClosing"
+        Loaded="EditDialogEvent_OnLoaded">
+    <Grid Name="EditDialogEventGrid">
+        <Button Name="AddDialogButton" Content="Add dialog" HorizontalAlignment="Left" Margin="368,63,0,0" VerticalAlignment="Top" Width="83" Click="AddDialogButton_Click_1"/>
+        <Button Name="AddDecisionButton" Click="AddDecisionButton_OnClick" Content="Add decisions" HorizontalAlignment="Left" Margin="368,88,0,0" VerticalAlignment="Top" Width="83"/>
+        <ComboBox Name="Voices" HorizontalAlignment="Left" Margin="368,36,0,0" VerticalAlignment="Top" Width="83" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="33" IsSelected="True"></ComboBoxItem>
+            <ComboBoxItem Content="34"></ComboBoxItem>
+            <ComboBoxItem Content="38"></ComboBoxItem>
+            <ComboBoxItem Content="56"></ComboBoxItem>
+        </ComboBox>
+        <Label Content="Voice :" HorizontalAlignment="Left" Margin="368,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.409,-1.327"/>
+        <Label Content="33 - narrator&#xD;&#xA;56 - main&#xD;&#xA;character&#xD;&#xA;" HorizontalAlignment="Left" Margin="370,298,0,0" VerticalAlignment="Top" Height="60" Width="83"/>
+        <Label Content="Left decision &#xD;&#xA;result type" HorizontalAlignment="Left" Margin="365,108,0,0" VerticalAlignment="Top" Height="41"/>
+        <ComboBox x:Name="LeftDecisionType" HorizontalAlignment="Left" Margin="370,149,0,0" VerticalAlignment="Top" Width="83" SelectionChanged="LeftDecisionResult_SelectionChanged">
+        </ComboBox>
+        <Label Content="Right decision &#xA;result type" HorizontalAlignment="Left" Margin="365,176,0,0" VerticalAlignment="Top" Height="41"/>
+        <ComboBox x:Name="RightDecisionType" HorizontalAlignment="Left" Margin="370,222,0,0" VerticalAlignment="Top" Width="83" SelectionChanged="RightDecisionResult_SelectionChanged">
+        </ComboBox>
+        <TextBlock Text="{Binding Path=DecisionInfoText}" HorizontalAlignment="Left" Margin="370,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
+
+    </Grid>
+</Window>

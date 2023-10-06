@@ -1,0 +1,30 @@
+﻿<Window x:Class="BeyondVisionEngine.EditMajorLocation"
+                                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                                  xmlns:local="clr-namespace:BeyondVisionEngine"
+                                  xmlns:editorWindows="clr-namespace:BeyondVisionEngine.EditorWindows"
+                                  mc:Ignorable="d"
+                                  Title="EditMajorLocation" Height="450" Width="800"
+                                  Closing="EditMajorLocation_OnClosing"
+                                  Loaded="EditMajorLocation_OnLoaded">
+
+
+    <Grid x:Name="MainGrid">
+        <Grid.ColumnDefinitions/>
+        <Canvas x:Name="canvas"></Canvas>
+        <Grid Name="EditMajorLocationGrid" Grid.Column="0" Background="Transparent">
+            <Grid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Doors" Click="Doors_OnClick"/>
+                    <MenuItem Header="Key" Click="Key_OnClick"/>
+                    <MenuItem Header="Dialog" Click="Dialog_OnClick"></MenuItem>
+                    <MenuItem Header="Enemy" Click="Enemy_OnClick"></MenuItem>
+                    <MenuItem Header="Game start" Click="GameStart_OnClick"></MenuItem>
+                    <MenuItem Header="Game end" Click="GameEnd_OnClick"></MenuItem>
+                </ContextMenu>
+            </Grid.ContextMenu>
+        </Grid>
+    </Grid>
+</Window>

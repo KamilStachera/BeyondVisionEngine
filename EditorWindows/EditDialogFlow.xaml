@@ -1,0 +1,23 @@
+﻿<local:PlanningWindowBase x:Class="BeyondVisionEngine.EditorWindows.EditDialogFlow"
+                                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                                  xmlns:local="clr-namespace:BeyondVisionEngine.EditorWindows"
+                                  mc:Ignorable="d"
+                                  Title="EditDialogFlow" Height="450" Width="800"
+                                  Loaded="EditDialogFlow_OnLoaded"
+                                  Closed="EditDialogFlow_OnClosed">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="88" /> 
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Name="EditDialogFlowMainGrid" Background="Transparent">
+        </Grid>
+        <Grid Grid.Column="1">
+            <Button Name="AddDialogButton" Click="AddDialogButton_OnClick" Content="Add dialog" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="75"/>
+
+        </Grid>
+    </Grid>
+</local:PlanningWindowBase>
